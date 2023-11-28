@@ -3,7 +3,7 @@ import LoudSpeakerImage from '../../images/LoudSpeakerImage.png';
 import styled from 'styled-components';
 import ShareSymbol from '../../images/ShareSymbol.png';
 import MultiUserSymbol from '../../images/MultiUserSymbol.png';
-import GemSymbol from '../../images/Symbol-3.png';
+import GemSymbol from '../../images/SymbolThree.png';
 import Gradient from '../../images/Gradient.png';
 import Button from '../Button';
 
