@@ -1,7 +1,7 @@
 import React from 'react';
-import PhoneLeft from "../../images/Phone-left.png";
-import PhoneMid from "../../images/Phone-mid.png";
-import PhoneRight from "../../images/Phone-right.png";
+import PhoneLeft from "../../images/PhoneLeft.png";
+import PhoneMid from "../../images/PhoneMid.png";
+import PhoneRight from "../../images/PhoneRight.png";
 import styled from 'styled-components';
 
 const ImageWrapper = styled.div`

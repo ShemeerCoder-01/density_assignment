@@ -1,7 +1,7 @@
 import React from 'react';
-import SymbolOne from '../../images/Symbol-1.png';
-import SymbolTwo from '../../images/Symbol-2.png';
-import SymbolThree from '../../images/Symbol-3.png';
+import SymbolOne from '../../images/SymbolOne.png';
+import SymbolTwo from '../../images/SymbolTwo.png';
+import SymbolThree from '../../images/SymbolThree.png';
 import styled from 'styled-components';
 
 const DataDivWrapper = styled.div`
