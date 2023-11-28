@@ -17,7 +17,7 @@ const H3 = styled.h3`
   line-height:1;
 `;
 
-const SPAN = styled.span`
+const SPANcomponent = styled.span`
   background-image: linear-gradient(
     96.58deg,
     #D5F938 47.68%,
@@ -43,18 +43,13 @@ const DataDivWrapper = styled.div`
 
 const DataDiv = styled.div`
   padding:10px 2rem;
-  border-right: 1px solid;
-  border-color:#fff;
-  &:last-child{
-    border-right: 0;
-  }
 `;
 
 function LineChartImage() {
   return (
     <div style={{ marginTop: '5rem', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         <div>
-          <H2><SPAN>Unlock</SPAN> New Frontiers.</H2>
+          <H2><SPANcomponent>Unlock</SPANcomponent> New Frontiers.</H2>
           <p style={{ textAlign: 'center', color: '#E7E7EA' }}>Are you a stock trader looking for new opportunities to make money? We got you covered!</p>
         </div>
         <DataDivWrapper>

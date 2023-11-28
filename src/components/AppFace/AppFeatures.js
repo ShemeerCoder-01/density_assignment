@@ -5,8 +5,6 @@ import SymbolThree from '../../images/SymbolThree.png';
 import styled from 'styled-components';
 
 const DataDivWrapper = styled.div`
-  // background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)),
-  // linear-gradient(180deg, rgba(50, 216, 117, 0.24) 0%, rgba(226, 255, 111, 0.25) 121.93%);
   box-shadow: 0px 0px 10px 0px #EBFF2533;
   border: 1.5px solid;
   border-image-source: linear-gradient(180deg, rgba(50, 216, 117, 0.24) 0%, rgba(226, 255, 111, 0.25) 121.93%);
@@ -19,11 +17,6 @@ const DataDivWrapper = styled.div`
 
 const DataDiv = styled.div`
   padding:10px 2rem;
-  border-right: 1px solid;
-  border-color:#fff;
-  &:last-child{
-    border-right: 0;
-  }
 `;
 
 const FeaturesDiv = styled.div`
@@ -43,16 +36,9 @@ const FeatureDiv = styled.div`
   align-items:center;
   gap:0.75rem;
   margin-top:6rem;
-  border: 1px solid transparent; 
-  border-image-source: linear-gradient(
-    161.79deg,
-    #28b6a2 16.43%,
-    rgba(226, 255, 111, 0) 103.77%
-  );
-  border-image-slice: 1;
-  border-image-width: 1px;
-  border-image-outset: 0px;
-  background-clip:padding-box,border-box;
+  background:#111;
+  position:relative;
+  top:-6rem;
   border-radius:7px;
 `;
 
@@ -76,10 +62,25 @@ const P = styled.p`
   margin:0.5rem 0;
 `;
 
+const Wrapp = styled.div` 
+  width: 188px;
+  height:372px;
+  padding:2px;
+  display:flex;
+  position:relative;
+  background: linear-gradient(
+    161.79deg,
+    #28b6a2 16.43%,
+    rgba(226, 255, 111, 0) 103.77%
+  );
+  border-radius:7px;
+`;
+
 function AppFeatures() {
     return (
         <>
             <DataDivWrapper>
+             
                 <DataDiv>
                     <H4>00%</H4>
                     <P>Conversion Fee</P>
@@ -98,18 +99,24 @@ function AppFeatures() {
                 </DataDiv>
             </DataDivWrapper>
             <FeaturesDiv>
+              <Wrapp>
                 <FeatureDiv>
                     <img src={SymbolOne} alt="Symbol" style={{ width: '4.5rem', height: '4.5rem' }} />
                     <FeatureDesc>One App.Endless Possibilities</FeatureDesc>
                 </FeatureDiv>
+              </Wrapp>
+              <Wrapp>
                 <FeatureDiv>
                     <img src={SymbolTwo} alt="Symbol" style={{ width: '4.5rem', height: '4.5rem' }} />
                     <FeatureDesc>Future of Derivative trading</FeatureDesc>
                 </FeatureDiv>
+              </Wrapp>
+              <Wrapp>
                 <FeatureDiv>
                     <img src={SymbolThree} alt="Symbol" style={{ width: '4.5rem', height: '4.5rem' }} />
                     <FeatureDesc>Is now here, for you.</FeatureDesc>
                 </FeatureDiv>
+              </Wrapp>
             </FeaturesDiv>
         </>
     )
