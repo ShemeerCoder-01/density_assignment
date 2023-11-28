@@ -5,10 +5,10 @@
  * See: https://www.gatsbyjs.com/docs/how-to/querying-data/use-static-query/
  */
 
-import * as React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-
-import Header from "./header"
+import * as React from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import Footer from "./Footer.js";
+import NavBar from "./header.js"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -24,7 +24,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      <NavBar/>
       <div
         style={{
           margin: `0 auto`,
@@ -33,17 +33,8 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer
-          style={{
-            marginTop: `var(--space-5)`,
-            fontSize: `var(--font-sm)`,
-          }}
-        >
-          © {new Date().getFullYear()} &middot; Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
       </div>
+      <Footer/>
     </>
   )
 }
