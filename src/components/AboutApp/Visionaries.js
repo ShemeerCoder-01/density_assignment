@@ -10,7 +10,7 @@ const H2 = styled.h2`
   font-size:2.5rem;
   font-weight:700;
   text-align:center;
-  line-height:0;
+  line-height:1.05;
 `;
 
 const H4 = styled.h4`
@@ -43,8 +43,7 @@ function Visionaries() {
     return (
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' ,background:'#19191D'}}>
            
-            <H2>Meet the <SPANcomponent>Visionaries</SPANcomponent></H2>
-            <H2>behind density.</H2> 
+            <H2>Meet the <SPANcomponent>Visionaries</SPANcomponent><br/>behind density.</H2>
             <div style={{ display: 'flex', gap: '1rem', margin: '3rem 0' }}>
                 <div style={{ width: '200px', height: '200px', position: 'relative', background: '#2B2C33', padding: '1rem', display: 'flex', flexDirection: 'column',justifyContent:'space-between'}}>
                     <div>
